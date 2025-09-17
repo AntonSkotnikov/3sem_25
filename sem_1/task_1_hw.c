@@ -100,7 +100,6 @@ int main() {
 		char str[MAX_STR_LEN];
         	printf(">> ");
 		fgets(str, MAX_NUM_OF_TOKENS, stdin);
-		//*strchr(str, '\n') = '\0';
         	str[strcspn(str, "\n")] = '\0';
 		seq_pipe(parse_cmdline(str));
 	}
