@@ -3,6 +3,8 @@
 #include <string.h>
 #include <unistd.h>
 
+
+
 const int MAX_NUM_OF_TOKENS = 1048576;
 const int MAX_STR_LEN = 1048576;
 const int MAX_OF_CMD = 1048576;
@@ -56,8 +58,7 @@ char*** parse_cmdline(char* cmdline) {
     return cmd_array;
 }
 
-void seq_pipe(char*** cmd)
-{
+void seq_pipe(char*** cmd) {
     int   p[2];
     pid_t pid;
     int   fd_in = 0;
