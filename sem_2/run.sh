@@ -1,5 +1,7 @@
 #!/bin/bash
 
+time dd if=/dev/urandom of="4gb_test.txt" bs=1048576 count=4096
+
 IN="4gb_test.txt"
 OUT="dupp_output.txt"
 
