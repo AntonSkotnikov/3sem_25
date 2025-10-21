@@ -2,16 +2,16 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/wait.h>
 #include <time.h>
 #include "task_2_pipe.h"
-
 const int buffer_size = 4096;
 struct timespec start, end;
 
 int main() {
 
-    FILE* input_file  = fopen("test_file.txt", "r");
-    FILE* output_file = fopen("output.txt", "w");
+    FILE* input_file  = fopen("4gb_test.txt", "r");
+    FILE* output_file = fopen("dupp_output.txt", "w");
 
     Pipe duplex_pipe = {};
     pipe_ctor(&duplex_pipe);

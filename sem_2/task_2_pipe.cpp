@@ -28,7 +28,7 @@ size_t snd (Pipe* self, pipeType parent) {
 
 size_t pipe_ctor (Pipe* self) {
     self->data = (char*)calloc(buffer_size, sizeof(char));
-    if (self->data == nullptr) {
+    if (self->data == NULL) {
         perror("Can't alloc buffer\n");
         return 1;
     }

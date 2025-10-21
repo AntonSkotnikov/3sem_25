@@ -16,7 +16,7 @@ if [ ! -f "$OUT" ]; then
 fi
 
 echo "Start compiling ---------------------------------------------------------"
-gcc -Iinclude t2_pipe.cpp t2_main.cpp -o test
+gcc -Iinclude task_2_pipe.cpp task_2_main.cpp -o test
 echo "End compiling   ---------------------------------------------------------"
 ./test
 
