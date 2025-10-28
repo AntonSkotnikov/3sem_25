@@ -12,19 +12,19 @@
 
 Итоговые результаты для файла 64kb: 
 
-![Image alt](sem_3/graph_64kb.png)
+![Image alt](graph_64kb.png)
 
 
 
 для файла 4mb: 
 
-![Image alt](sem_3/graph_4mb.png)
+![Image alt](graph_4mb.png)
 
 
 
 для файла 4gb: 
 
-![Image alt](sem_3/graph_4gb.png)
+![Image alt](graph_4gb.png)
  
 ## АНАЛИЗ 
 Самый медленный способ передачи данных из тех, что получились у меня - это Shared memory ipc.
